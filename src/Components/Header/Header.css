@@ -1,0 +1,188 @@
+#firstHeader{
+    display: flex;
+}
+
+#Logo{
+    position: relative;
+    left: 80px;
+    top: 15px;
+    font-family: Inter;
+    color: #CF2D2D;
+}
+
+#categoryBtn{
+    position: relative;
+    top: 35px;
+    left: 280px;
+    height: 40px;
+    width: 140px;
+    background-color: black;
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#menuBar{
+    height: 20px;
+}
+#categories{
+    color: white;
+    position: relative;
+    left: 10px;
+    top: -4px;
+    font-size: medium;
+    font-family: Inter;
+}
+
+#eventInput{
+    padding-left: 10px;
+    position: relative;
+    top: 35px;
+    left: 300px;
+    border-radius: 8px;
+    border: 1px solid #B0BABF;
+    width: 500px;
+    height: 40px;
+}
+#searchIcon{
+    position: relative;
+    left: 265px;
+    top: 45px;
+    height: 25px;
+    width: 25px;
+}
+
+
+#favSec{
+    height: 40px;
+    width: 115px;
+    position: relative;
+    top: 40px;
+    left: 320px;
+}
+#favorites{
+    position: relative;
+    top: -10px;
+    left: 10px;
+    font-family: Inter;
+}
+
+#userIcon{
+    display: none;
+}
+#SignBtn{
+    position: relative;
+    left: 350px;
+    top: 35px;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #B0BABF;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#secondHeader{
+    display: flex;
+}
+
+#locSec{
+    position: relative;
+    left: 80px;
+    top: 15px;
+}
+#locIcon{
+    width: 20px;
+    height: 20px;
+}
+#locText,#locArrow{
+    padding-left: 10px;
+}
+
+
+#allEvents{
+    position: relative;
+    left: 340px;
+    top: 15px;
+}
+#allEvents span{
+    padding: 20px;
+    cursor: pointer;
+    font-family: Inter;
+}
+
+
+
+
+/*---------------------Media Query----------------------*/
+@media screen and (max-width:478px) {
+    #categoryBtn,#eventInput,#favorites,#SignBtn{
+        display: none;
+    }
+    #Logo{
+        font-size: larger;
+        left: 20px;
+    }
+
+    #searchIcon{
+        left: 200px;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #favSec{
+        left: 165px;
+        top: 22px;
+    }
+    #favSec img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #userIcon{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 130px;
+        top: 20px;
+    }
+
+    #secondHeader{
+        display: block;
+    }
+
+    #locSec{
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        height: 20px;
+    }
+    #locIcon{
+        position: absolute;
+    }
+    #locText{
+        font-size: small;
+        padding-left: 20px;
+    }
+
+    #allEvents{
+        display: flex;
+        left: 5px;
+        top: 30px;
+        width: 424px;
+        height: 20px;
+        overflow-x: auto;
+        gap: 2px;
+    }
+    #allEvents::-webkit-scrollbar{
+        display: none;
+    }
+
+    #allEvents span{
+        padding: 0;
+        min-width: 90px;
+        font-size: small;
+    }
+}

@@ -1,0 +1,107 @@
+#eventBox{
+    width:355px;
+    height: 340px;
+    border: 1px solid #B0BABF;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#eventBox:hover{
+    transform: scale(105%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#eventImg{
+    width: 355px;
+    border-radius: 20px;
+}
+
+#eventDates{
+    width: 312px;
+    height: 25px;
+    position: relative;
+    top: -54px;
+    left: 16px;
+    padding: 10px 0 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    font-family: Inter;
+    font-size: small;
+}
+
+#eventName{
+    position: relative;
+    top: -35px;
+    text-align: left;
+    font-family: Inter;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#eventLocIcon{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    left: -140px;
+}
+#eventLoc{
+    width: 90px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    text-align: center;
+    font-family: Inter;
+    font-size: small;
+    color: #B0BABF;
+}
+#eventSmallLoc{
+    width: 75px;
+    position: relative;
+    top: -50px;
+    left: 40px;
+    text-align: center;
+    font-family: Inter;
+    font-size: small;
+    color: #B0BABF;
+}
+
+#eventWeather{
+    width: 78px;
+    position: absolute;
+    top: 300px;
+    left: 190px;
+    font-family: Inter;
+    font-size: small;
+    color: #B0BABF;
+}
+
+#eventCardLine{
+    width: 15px;
+    height: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 300px;
+    left: 265px;
+}
+
+#eventDist{
+    width: 60px;
+    position: absolute;
+    top: 300px;
+    left: 280px;
+    font-size: small;
+    font-family: Inter;
+    color: #B0BABF;
+}
+
+
+@media screen and (max-width:478px) {
+    #eventBox{
+        margin-bottom: 50px;
+    }
+}

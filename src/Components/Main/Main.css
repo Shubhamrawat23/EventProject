@@ -1,0 +1,176 @@
+#banner{
+    position: relative;
+    top: 25px;
+    width: 100%;
+}
+
+#heading{
+    position: relative;
+    top: -600px;
+    font-family: Inter;
+    font-size: xx-large; 
+    word-spacing: 5px;
+    line-height: 50px;
+    color: white;
+    padding: 0 450px 0 450px;
+}
+#subHead{
+    position: relative;
+    top: -620px;
+    color: white;
+    font-family: inter;
+    font-size:medium;
+    padding: 0 500px 0 500px;
+}
+
+#recommendText{
+    color: white;
+    position: relative;
+    top: -480px;
+    left: -490px;
+    font-family:  Inter;
+    font-weight: 500;
+    font-size: larger;
+}
+
+#recommendText img{
+    position: relative;
+    top: 22px;
+    left: 10px;
+}
+
+#recommendBox{
+    width: 1389px;
+    height: 505px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    top: 770px;
+    left: 130px;
+    padding: 0;
+    margin: 0;
+}
+#recommendBox::-webkit-scrollbar{
+    display: none;
+}
+
+
+#upcomingEventsText{
+    font-family: Inter;
+    font-weight: 800;
+    font-size: x-large;
+    position: relative;
+    left: -450px;
+}
+#upcomingEventsText img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+}
+
+#upcomingEventBox{
+    height: 750px;
+    width: 1250px;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+    left: 200px;
+    padding: 10px;
+}
+#upcomingEventBox::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+/*-------------------Media Query----------------*/
+
+
+@media screen and (max-width:1440px) {
+
+    #recommendText{
+        left: -520px;
+    }
+    #recommendBox{
+        left: 100px;
+        gap: 10px;
+        width: 1340px;
+    }
+    #upcomingEventBox{
+        width: 1200px;
+    }
+
+}
+@media screen and (max-width:478px) {
+    #banner{
+        left: -3px;
+        top: 45px;
+        width: 445px;
+        height: 800px;
+        object-fit: cover;
+    }
+
+    #heading{
+        left: 60px;
+        top: -700px;
+        width: 300px;
+        padding: 0;
+        font-size: x-large;
+    }
+
+    #subHead{
+        padding: 0;
+        width: 320px;
+        left: 60px;
+        top: -700px;
+        line-height: 40px;
+        font-size: small;
+    }
+
+    #recommendText{
+        position: absolute;
+        left: 20px;
+        top: 530px;
+        font-size: medium;
+    }
+    #recommendText img{
+        width: 35px;
+        height: 35px;
+        top: 12px;
+    }
+
+    #recommendBox{
+        top: 550px;
+        left: 20px;
+        width: 424px;
+    }
+
+    #upcomingEventsText{
+        top: -130px;
+        left: 30px;
+        width: 200px;
+        font-size: medium;
+        font-weight: 700;
+    }
+    #upcomingEventsText img{
+        width: 25px;
+        height: 25px;
+        top: 8px;
+    }
+
+    #upcomingEventBox{
+        display: block;
+        width: 370px;
+        height: 750px;
+        position: absolute;
+        left: 45px;
+        top: 1120px;
+    }
+}
